@@ -22,7 +22,7 @@ while (points > 0 && !quit)
         {
             Console.WriteLine("Tails");
             points -= 1;
-            if (points < 0)
+            if (points == 0)
                 Console.WriteLine("Sorry, you've run out of points.");
         }
     }
@@ -37,7 +37,7 @@ while (points > 0 && !quit)
         {
             Console.WriteLine("Heads");
             points -= 1;
-            if (points < 0)
+            if (points == 0)
                 Console.WriteLine("Sorry, you've run out of points.");
         }
     }
