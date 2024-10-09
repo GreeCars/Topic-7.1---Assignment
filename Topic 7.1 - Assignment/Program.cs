@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Random generator = new Random();
 string userInput;
-int points = 3, randNum;
+int points = 3, randNum, bet;
 bool quit = false;
 while (points > 0 && !quit)
 {
@@ -11,6 +11,8 @@ while (points > 0 && !quit)
     Console.WriteLine();
     userInput = Console.ReadLine();
     Console.WriteLine();
+    Console.WriteLine("How much would you like to bet?");
+    Int32.TryParse(Console.ReadLine(), out bet);
     if (userInput.ToLower() == "heads")
     {
         if (randNum == 1)
